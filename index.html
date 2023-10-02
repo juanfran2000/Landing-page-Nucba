@@ -1,0 +1,604 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.7/tailwind.min.css"
+    />
+
+    <title>Tailwind-Nucba</title>
+  </head>
+  <body>
+    <header>
+      <nav class="bg-blue-400 flex justify-between items-center px-10">
+        <a class="flex items-center">
+          <img
+            class="w-24 p-2"
+            src="https://upload.wikimedia.org/wikipedia/commons/b/b7/The_logo_simpsons_yellow.png"
+          />
+        </a>
+        <div class="text-2xl sm:hidden menu-icon" id="menu-icon">
+          <i class="fas fa-bars" style="color: #ffffff"></i>
+        </div>
+        <ul
+          class="sm:flex text-white sm:items-center text-2xl hidden sm:block sm:w-3/6 sm:justify-around"
+        >
+          <li><a href="#sectionCardPersonajes">Hero</a></li>
+          <li><a>Cards</a></li>
+          <li><a>Contact</a></li>
+        </ul>
+      </nav>
+      <div class="sm:hidden">
+        <nav class="menu" id="menu">
+          <li class="flex justify-center text-yellow-300"><a>Hero</a></li>
+          <li class="bg-blue-400 text-white flex justify-center">
+            <a>Cards</a>
+          </li>
+          <li class="flex justify-center text-yellow-300"><a>Contact</a></li>
+        </nav>
+        <script>
+          const menuIcon = document.getElementById("menu-icon");
+          const menu = document.getElementById("menu");
+
+          menuIcon.addEventListener("click", () => {
+            menu.classList.toggle("active");
+          });
+        </script>
+      </div>
+    </header>
+    <main class="p-8">
+      <section id="sectionCardPersonajes" class="text-center mt-10">
+        <h1
+          class="text-5xl font-bold bg-gradient-to-r from-yellow-300 via-black to-blue-400 text-transparent bg-clip-text"
+        >
+          Descubre el Mundo de Los Simpsons
+        </h1>
+        <p class="mt-10 text-sm">
+          The Simpsons NFT es el primer Marketplace educativo tecnológico de
+          NFT, que son elementos digitales épicos que realmente puedes poseer.
+          Los elementos digitales existen desde hace mucho tiempo, pero nunca
+          como este.
+        </p>
+        <button
+          class="py-2 px-4 bg-blue-400 text-white font-bold rounded-xl mt-6"
+        >
+          Be Nucber
+        </button>
+      </section>
+      <section class="mt-20 text-4xl font-bold text-center">
+        <h2>Crea, aprende y comparte con Los Simpsons</h2>
+        <div class="">
+          <!--Card One -->
+          <div class="flex justify-center">
+            <div
+              class="w-11/12 h-80 bg-yellow-300 rounded-xl mt-20 flex justify-center items-center"
+            >
+              <div
+                class="w-56 h-56 bg-white rounded-xl flex justify-center items-center"
+              >
+                <div>
+                  <div class="w-28 h-28 rounded-full bg-black">
+                    <img
+                      class="w-full h-full object-cover rounded-full"
+                      src="https://vader.news/__export/1595909427453/sites/gadgets/img/2020/07/28/homer-simpso.jpeg_1686074016.jpeg"
+                    />
+                  </div>
+                  <div class="text-sm mt-4">
+                    <h3>Homero Simpson</h3>
+                    <p class="text-gray-600 text-xs">Padre y Esposo</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Card two -->
+          <div class="flex justify-center">
+            <div
+              class="w-11/12 h-80 bg-yellow-300 rounded-xl mt-10 flex justify-center items-center"
+            >
+              <div
+                class="w-56 h-56 bg-white rounded-xl flex justify-center items-center"
+              >
+                <div>
+                  <div class="w-28 h-28 rounded-full bg-black">
+                    <img
+                      class="w-full h-full object-cover rounded-full"
+                      src="https://64.media.tumblr.com/363e35f917bb57b1e6c4247dec673a31/tumblr_inline_p0ajap4dg81s7vi9z_640.jpg"
+                    />
+                  </div>
+                  <div class="text-sm mt-4">
+                    <h3>Marge Simpson</h3>
+                    <p class="text-gray-600 text-xs">Madre y Esposa</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Card Tree -->
+          <div class="flex justify-center">
+            <div
+              class="w-11/12 h-80 bg-yellow-300 rounded-xl mt-10 flex justify-center items-center"
+            >
+              <div
+                class="w-56 h-56 bg-white rounded-xl flex justify-center items-center"
+              >
+                <div>
+                  <div class="w-28 h-28 rounded-full bg-black">
+                    <img
+                      class="w-full h-full object-cover rounded-full"
+                      src="https://1.bp.blogspot.com/-owd45kpJfGg/YCjoVbHrTzI/AAAAAAAAj5A/1WflcPbCVq8vEWds-cPQ1ykJHdj603XagCLcBGAsYHQ/s0/los-simpson-personajes-bart-simpson.jpg"
+                    />
+                  </div>
+                  <div class="text-sm mt-4">
+                    <h3>Bart Simpson</h3>
+                    <p class="text-gray-600 text-xs">Hijo y Hermano</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Card Four -->
+          <div class="flex justify-center">
+            <div
+              class="w-11/12 h-80 bg-yellow-300 rounded-xl mt-10 flex justify-center items-center"
+            >
+              <div
+                class="w-56 h-56 bg-white rounded-xl flex justify-center items-center"
+              >
+                <div>
+                  <div class="w-28 h-28 rounded-full bg-black">
+                    <img
+                      class="w-full h-full object-cover rounded-full"
+                      src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSITpN1y6af5eiyVtK0iZplPqHHpL5KuJWLcMBy1EgcyiJEKIsuaRjhkVZTDqGN5kocuwU&usqp=CAU"
+                    />
+                  </div>
+                  <div class="text-sm mt-4">
+                    <h3>Lisa Simpson</h3>
+                    <p class="text-gray-600 text-xs">Hija y Hermana</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Card Five -->
+          <div class="flex justify-center">
+            <div
+              class="w-11/12 h-80 bg-yellow-300 rounded-xl mt-10 flex justify-center items-center"
+            >
+              <div
+                class="w-56 h-56 bg-white rounded-xl flex justify-center items-center"
+              >
+                <div>
+                  <div class="w-28 h-28 rounded-full bg-black">
+                    <img
+                      class="w-full h-full object-cover rounded-full"
+                      src="https://www.show.news/__export/1587153105864/sites/debate/img/2020/04/17/simpsons-disney_x2x_crop1587152967419.jpg_943222218.jpg"
+                    />
+                  </div>
+                  <div class="text-sm mt-4">
+                    <h3>Lisa Simpson</h3>
+                    <p class="text-gray-600 text-xs">Hija y Hermana</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="text-center mt-20">
+        <h2 class="text-4xl font-bold">
+          Descubre una nueva era de colecciones
+        </h2>
+        <p class="text-sm mt-8 mb-8">
+          Tendras la oportunidad de coleccionar NFTs sobre distintos tópicos, y
+          de este modo acceder a beneficios exclusivos por tomar parte de dicho
+          club. Ej: "The Simpsons"
+        </p>
+        <a class="text-2xl font-bold underline">Empezar Ahora</a>
+
+        <div class="flex-col justify-center mt-10">
+          <!--Card img One -->
+          <div class="flex justify-center">
+            <div class="w-11/12 h-72 bg-blue-400 rounded-xl">
+              <img
+                class="h-full w-full object-cover rounded-xl"
+                src="https://s3.abcstatics.com/media/play/2022/01/23/Dali-simpson-U23640176881fxY-620x349@abc.jpg"
+              />
+            </div>
+          </div>
+          <!--Card img Two -->
+          <div class="flex justify-center mt-10">
+            <div class="w-11/12 h-72 bg-blue-400 rounded-xl">
+              <img
+                class="h-full w-full object-cover rounded-xl"
+                src="https://etcetera.com.mx/wp-content/uploads/2021/04/simp5.jpg"
+              />
+            </div>
+          </div>
+          <!-- Card img three -->
+          <div class="flex justify-center mt-10">
+            <div class="w-11/12 h-72 bg-blue-400 rounded-xl">
+              <img
+                class="h-full w-full object-cover rounded-xl"
+                src="https://mymodernmet.com/wp/wp-content/uploads/2021/05/fine-art-simpsons-15.jpeg"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="mt-20">
+        <h2 class="font-bold text-3xl text-center">Hot NFTs</h2>
+        <div class="flex justify-center mt-10">
+          <div class="flex flex-col">
+            <button
+              class="py-2 px-4 font-bold bg-blue-400 text-white rounded-xl mr-2"
+            >
+              🎨 Todas
+            </button>
+            <button
+              class="py-2 px-4 font-bold bg-blue-400 text-white rounded-xl mt-2 mr-2"
+            >
+              🎷 Musica
+            </button>
+            <button
+              class="py-2 px-4 font-bold bg-blue-400 text-white rounded-xl mt-2 mr-2"
+            >
+              🏎️ Autos
+            </button>
+          </div>
+          <div class="flex flex-col">
+            <button
+              class="py-2 px-4 font-bold bg-blue-400 text-white rounded-xl"
+            >
+              ⚽ Futbol
+            </button>
+            <button
+              class="py-2 px-4 font-bold bg-blue-400 text-white rounded-xl mt-2"
+            >
+              🎬 Pelicula
+            </button>
+            <button
+              class="py-2 px-4 font-bold bg-blue-400 text-white rounded-xl mt-2"
+            >
+              🏛️ Politico
+            </button>
+          </div>
+        </div>
+
+        <div class="mt-10">
+          <!-- Card Nft One -->
+          <div class="flex justify-center">
+            <div
+              class="w-11/12 py-6 bg-gray-200 rounded-xl flex flex-col justify-center items-center"
+            >
+              <div class="w-60 h-60 rounded-xl">
+                <img
+                  class="w-full h-full object-cover rounded-xl"
+                  src="https://pbs.twimg.com/media/FJFPLs6WUAsW3Go?format=jpg&name=medium"
+                  alt="Nft simpsons monkey money"
+                />
+              </div>
+              <div class="w-full flex flex-col justify-center">
+                <div class="flex mt-6 justify-around w-11/12 mx-auto">
+                  <h3 class="font-bold text-sm">Gmoney Simpson NFTs</h3>
+                  <h4 class="text-zinc-400 text-sm">Current Bid</h4>
+                </div>
+                <div class="flex justify-center mt-2">
+                  <div class="flex items-center justify-between w-10/12">
+                    <div class="flex items-center justify-between w-3/6">
+                      <div class="h-12 w-12 rounded-full">
+                        <img
+                          class="w-full h-full object-cover rounded-full"
+                          src="https://i.blogs.es/d1e3df/tanjiro-kamado/1366_2000.jpeg"
+                          alt="foto de perfil"
+                        />
+                      </div>
+                      <h4>jortega</h4>
+                    </div>
+                    <div>9.74 Eth</div>
+                  </div>
+                </div>
+
+                <div class="flex justify-between w-10/12 mx-auto mt-2">
+                  <h2>#2193191</h2>
+                  <button
+                    class="py-1 px-4 bg-blue-400 rounded-xl font-bold text-white"
+                  >
+                    Add
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Card Nft Two -->
+          <div class="flex justify-center">
+            <div
+              class="w-11/12 py-6 bg-gray-200 rounded-xl flex flex-col justify-center items-center mt-10"
+            >
+              <div class="w-60 h-60 rounded-xl">
+                <img
+                  class="w-full h-full object-cover rounded-xl"
+                  src="https://public.nftstatic.com/static/nft/zipped/9e74ff6c2e5641daab3945c6062f03b0_zipped.png"
+                  alt="nft simsons"
+                />
+              </div>
+              <div class="w-full flex flex-col justify-center">
+                <div class="flex mt-6 justify-around w-11/12 mx-auto">
+                  <h3 class="font-bold text-sm">Gmoney Simpson NFTs</h3>
+                  <h4 class="text-zinc-400 text-sm">Current Bid</h4>
+                </div>
+                <div class="flex justify-center mt-2">
+                  <div class="flex items-center justify-between w-10/12">
+                    <div class="flex items-center justify-between w-3/6">
+                      <div class="h-12 w-12 rounded-full">
+                        <img
+                          class="w-full h-full object-cover rounded-full"
+                          src="https://i.blogs.es/d1e3df/tanjiro-kamado/1366_2000.jpeg"
+                          alt="foto de perfil"
+                        />
+                      </div>
+                      <h4>jortega</h4>
+                    </div>
+                    <div>9.74 Eth</div>
+                  </div>
+                </div>
+                <div class="flex justify-between w-10/12 mx-auto mt-2">
+                  <h2>#2193191</h2>
+                  <button
+                    class="py-1 px-4 bg-blue-400 rounded-xl font-bold text-white"
+                  >
+                    Add
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Card Nft Three -->
+          <div class="flex justify-center">
+            <div
+              class="w-11/12 py-6 bg-gray-200 rounded-xl flex flex-col justify-center items-center mt-10"
+            >
+              <div class="w-60 h-60 rounded-xl">
+                <img
+                  class="w-full h-full object-cover rounded-xl"
+                  src="https://i.pinimg.com/736x/c7/68/b2/c768b2b9494d7fcba47d186bb2e4cbe4.jpg"
+                  alt="NFt simsons Bob Sponja X bart"
+                />
+              </div>
+              <div class="w-full flex flex-col justify-center">
+                <div class="flex mt-6 justify-around w-11/12 mx-auto">
+                  <h3 class="font-bold text-sm">Gmoney Simpson NFTs</h3>
+                  <h4 class="text-zinc-400 text-sm">Current Bid</h4>
+                </div>
+                <div class="flex justify-center mt-2">
+                  <div class="flex items-center justify-between w-10/12">
+                    <div class="flex items-center justify-between w-3/6">
+                      <div class="h-12 w-12 rounded-full">
+                        <img
+                          class="w-full h-full object-cover rounded-full"
+                          src="https://i.blogs.es/d1e3df/tanjiro-kamado/1366_2000.jpeg"
+                          alt="foto de perfil"
+                        />
+                      </div>
+                      <h4>jortega</h4>
+                    </div>
+                    <div>9.74 Eth</div>
+                  </div>
+                </div>
+                <div class="flex justify-between w-10/12 mx-auto mt-2">
+                  <h2>#2193191</h2>
+                  <button
+                    class="py-1 px-4 bg-blue-400 rounded-xl font-bold text-white"
+                  >
+                    Add
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Card Nft Four -->
+          <div class="flex justify-center">
+            <div
+              class="w-11/12 py-6 bg-gray-200 rounded-xl flex flex-col justify-center items-center mt-10"
+            >
+              <div class="w-60 h-60 rounded-xl">
+                <img
+                  class="w-full h-full object-cover rounded-xl"
+                  src="https://i.pinimg.com/1200x/2c/cc/5b/2ccc5b49c15d111faf992c18b1f09de1.jpg"
+                  alt="NFt simsons Charizard X bart"
+                />
+              </div>
+              <div class="w-full flex flex-col justify-center">
+                <div class="flex mt-6 justify-around w-11/12 mx-auto">
+                  <h3 class="font-bold text-sm">Gmoney Simpson NFTs</h3>
+                  <h4 class="text-zinc-400 text-sm">Current Bid</h4>
+                </div>
+                <div class="flex justify-center mt-2">
+                  <div class="flex items-center justify-between w-10/12">
+                    <div class="flex items-center justify-between w-3/6">
+                      <div class="h-12 w-12 rounded-full">
+                        <img
+                          class="w-full h-full object-cover rounded-full"
+                          src="https://i.blogs.es/d1e3df/tanjiro-kamado/1366_2000.jpeg"
+                          alt="foto de perfil"
+                        />
+                      </div>
+                      <h4>jortega</h4>
+                    </div>
+                    <div>9.74 Eth</div>
+                  </div>
+                </div>
+                <div class="flex justify-between w-10/12 mx-auto mt-2">
+                  <h2>#2193191</h2>
+                  <button
+                    class="py-1 px-4 bg-blue-400 rounded-xl font-bold text-white"
+                  >
+                    Add
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Card Nft Five -->
+          <div class="flex justify-center">
+            <div
+              class="w-11/12 py-6 bg-gray-200 rounded-xl flex flex-col justify-center items-center mt-10"
+            >
+              <div class="w-60 h-60 rounded-xl">
+                <img
+                  class="w-full h-full object-cover rounded-xl"
+                  src="https://i.pinimg.com/736x/d5/a1/6c/d5a16cacaf0200addb66dcc4ad3a9677.jpg"
+                  alt="NFt simsons la momia X bart"
+                />
+              </div>
+              <div class="w-full flex flex-col justify-center">
+                <div class="flex mt-6 justify-around w-11/12 mx-auto">
+                  <h3 class="font-bold text-sm">Gmoney Simpson NFTs</h3>
+                  <h4 class="text-zinc-400 text-sm">Current Bid</h4>
+                </div>
+                <div class="flex justify-center mt-2">
+                  <div class="flex items-center justify-between w-10/12">
+                    <div class="flex items-center justify-between w-3/6">
+                      <div class="h-12 w-12 rounded-full">
+                        <img
+                          class="w-full h-full object-cover rounded-full"
+                          src="https://i.blogs.es/d1e3df/tanjiro-kamado/1366_2000.jpeg"
+                          alt="foto de perfil"
+                        />
+                      </div>
+                      <h4>jortega</h4>
+                    </div>
+                    <div>9.74 Eth</div>
+                  </div>
+                </div>
+                <div class="flex justify-between w-10/12 mx-auto mt-2">
+                  <h2>#2193191</h2>
+                  <button
+                    class="py-1 px-4 bg-blue-400 rounded-xl font-bold text-white"
+                  >
+                    Add
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Card Nft Six -->
+          <div class="flex justify-center">
+            <div
+              class="w-11/12 py-6 bg-gray-200 rounded-xl flex flex-col justify-center items-center mt-10"
+            >
+              <div class="w-60 h-60 rounded-xl">
+                <img
+                  class="w-full h-full object-cover rounded-xl"
+                  src="https://www.arweave.net/TXz7WEbfHqQAwJEyXXNIbIqBa_QR2i8Aqv41FUNJWTM?ext=PNG"
+                  alt="NFt Bart"
+                />
+              </div>
+              <div class="w-full flex flex-col justify-center">
+                <div class="flex mt-6 justify-around w-11/12 mx-auto">
+                  <h3 class="font-bold text-sm">Gmoney Simpson NFTs</h3>
+                  <h4 class="text-zinc-400 text-sm">Current Bid</h4>
+                </div>
+                <div class="flex justify-center mt-2">
+                  <div class="flex items-center justify-between w-10/12">
+                    <div class="flex items-center justify-between w-3/6">
+                      <div class="h-12 w-12 rounded-full">
+                        <img
+                          class="w-full h-full object-cover rounded-full"
+                          src="https://i.blogs.es/d1e3df/tanjiro-kamado/1366_2000.jpeg"
+                          alt="foto de perfil"
+                        />
+                      </div>
+                      <h4>jortega</h4>
+                    </div>
+                    <div>9.74 Eth</div>
+                  </div>
+                </div>
+                <div class="flex justify-between w-10/12 mx-auto mt-2">
+                  <h2>#2193191</h2>
+                  <button
+                    class="py-1 px-4 bg-blue-400 rounded-xl font-bold text-white"
+                  >
+                    Add
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <div class="flex justify-center">
+        <button
+          class="py-2 px-4 bg-blue-400 rounded-xl font-bold mt-10 text-white"
+        >
+          Ver Más
+        </button>
+      </div>
+    </main>
+    <footer class="flex flex-col justify-center bg-yellow-300 h-[105px]">
+      <div class="flex p-8">
+        <section class="mt-10 mb-10 w-11/12">
+          <div>
+            <div>
+              <h2 class="text-3xl font-bold">Contact Us</h2>
+              <div class="text-[10px] sm:text-lg">
+                <div>
+                  <h3 class="mt-10 font-bold">Arg. Buenos Aires</h3>
+                  <div class="flex mt-5 space-x-3">
+                    <img src="/icons/map-pin.svg" alt="pin" />
+                    <h3>Corriente 848</h3>
+                  </div>
+                  <div class="flex mt-5 space-x-3">
+                    <img src="/icons/mail.svg" alt="pin " />
+                    <h3>Jortegaruiz@nucba.com</h3>
+                  </div>
+                  <div class="flex mt-5 space-x-3">
+                    <img src="/icons/phone.svg" alt="pin" />
+                    <h3>+54 91138335824</h3>
+                  </div>
+                </div>
+                <div>
+                  <h3 class="mt-10 font-bold">Juan Gongora</h3>
+                  <div class="flex mt-5 space-x-3">
+                    <img src="/icons/map-pin.svg" alt="icon" />
+                    <h3>Obelisco</h3>
+                  </div>
+                  <div class="flex mt-5 space-x-3">
+                    <img src="/icons/mail.svg" alt="icon" />
+                    <h3>Jortegaruiz9@gmail.com</h3>
+                  </div>
+                  <div class="flex mt-5 space-x-3">
+                    <img src="/icons/phone.svg" alt="icon" />
+                    <h3>+593 983883197</h3>
+                  </div>
+                </div>
+              </div>
+              <div class="flex mt-10 space-x-4">
+                <img src="/icons/twitter.svg" alt="twitter" />
+                <img src="/icons/instagram.svg" alt="instagram" />
+                <img src="/icons/facebook.svg" alt="facebook" />
+              </div>
+            </div>
+            <div class="hidden lg:block">
+              <img
+                class="w-[400px] rounded-lg"
+                src="/personaje/kimetsu-no-yaiba.jpg"
+                alt="imagen contacto"
+              />
+            </div>
+          </div>
+        </section>
+      </div>
+      <div class="flex justify-center text-white">
+        <h2 class="uppercase font-bold p-4">Jortega X Nucba</h2>
+      </div>
+    </footer>
+  </body>
+</html>
