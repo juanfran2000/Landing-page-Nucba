@@ -8,10 +8,7 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
     />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.7/tailwind.min.css"
-    />
+    <script src="https://cdn.tailwindcss.com"></script>
 
     <title>Tailwind-Nucba</title>
   </head>
@@ -30,9 +27,9 @@
         <ul
           class="sm:flex text-white sm:items-center text-2xl hidden sm:block sm:w-3/6 sm:justify-around"
         >
-          <li><a href="#sectionCardPersonajes">Hero</a></li>
-          <li><a>Cards</a></li>
-          <li><a>Contact</a></li>
+          <li><a href="#cardsAprende">Personajes</a></li>
+          <li><a href="#colection">Colección</a></li>
+          <li><a href="#nfts">NFTs</a></li>
         </ul>
       </nav>
       <div class="sm:hidden">
@@ -54,137 +51,183 @@
       </div>
     </header>
     <main class="p-8">
-      <section id="sectionCardPersonajes" class="text-center mt-10">
-        <h1
-          class="text-5xl font-bold bg-gradient-to-r from-yellow-300 via-black to-blue-400 text-transparent bg-clip-text"
-        >
-          Descubre el Mundo de Los Simpsons
-        </h1>
-        <p class="mt-10 text-sm">
-          The Simpsons NFT es el primer Marketplace educativo tecnológico de
-          NFT, que son elementos digitales épicos que realmente puedes poseer.
-          Los elementos digitales existen desde hace mucho tiempo, pero nunca
-          como este.
-        </p>
-        <button
-          class="py-2 px-4 bg-blue-400 text-white font-bold rounded-xl mt-6"
-        >
-          Be Nucber
-        </button>
+      <section
+        id="sectionCardPersonajes"
+        class="lg:flex lg:justify-center lg:items-center lg:space-x-8 mt-10"
+      >
+        <div class="text-center lg:w-5/12 lg:text-start">
+          <h1
+            class="text-5xl font-bold bg-gradient-to-r from-yellow-300 via-black to-blue-400 text-transparent bg-clip-text"
+          >
+            Descubre el Mundo de Los Simpsons
+          </h1>
+          <p class="mt-10 text-sm">
+            The Simpsons NFT es el primer Marketplace educativo tecnológico de
+            NFT, que son elementos digitales épicos que realmente puedes poseer.
+            Los elementos digitales existen desde hace mucho tiempo, pero nunca
+            como este.
+          </p>
+          <button
+            class="py-2 px-4 bg-blue-400 text-white font-bold rounded-xl mt-6 hover:bg-yellow-300 hover:shadow-xl"
+          >
+            Be Nucber
+          </button>
+        </div>
+        <div class="h-[390px] w-[300px] bg-zinc-200 rounded-xl hidden lg:block">
+          <div class="flex flex-col justify-center items-center h-full w-full">
+            <div class="w-5/6 bg-blue-200 h-4/6 rounded-xl">
+              <img
+                class="w-full h-full object-cover rounded-xl"
+                src="https://hips.hearstapps.com/hmg-prod/images/los-simpson-fotogramas-1614805763.jpg"
+                alt="familia simpson imagen"
+              />
+            </div>
+            <div class="flex space-x-7 items-center mt-2 font-bold">
+              <h2>"The Simpsons Family"</h2>
+              <button class="py-1 px-4 bg-blue-400 rounded-lg text-white">
+                10
+              </button>
+            </div>
+            <div class="flex items-center space-x-16">
+              <div class="flex text-xs space-x-3 items-center">
+                <div class="w-12 h-12 bg-blue-400 rounded-xl">
+                  <img
+                    class="w-full h-full object-cover rounded-xl"
+                    src="https://i.guim.co.uk/img/media/ee2cdf7b5fb32dd0e4fe0744560ecce026391821/0_87_2400_1439/master/2400.jpg?width=1200&height=1200&quality=85&auto=format&fit=crop&s=f4edd498fb755483c96f896cbff3c9da"
+                    alt="imagen creador de los simpsons"
+                  />
+                </div>
+                <div>
+                  <h3 class="text-zinc-500">Creador</h3>
+                  <h3>Math Graning</h3>
+                </div>
+              </div>
+              <div class="text-xs">
+                <h4 class="text-zinc-500">Value</h4>
+                <h4>3 Eth</h4>
+              </div>
+            </div>
+          </div>
+        </div>
       </section>
-      <section class="mt-20 text-4xl font-bold text-center">
-        <h2>Crea, aprende y comparte con Los Simpsons</h2>
-        <div class="">
-          <!--Card One -->
+      <section class="mt-20 text-4xl font-bold" id="cardsAprende">
+        <h2 class="text-center">Crea, aprende y comparte con Los Simpsons</h2>
+        <div class="mt-20 md:flex md:flex-wrap md:justify-center">
+          <!-- Card Homero -->
           <div class="flex justify-center">
             <div
-              class="w-11/12 h-80 bg-yellow-300 rounded-xl mt-20 flex justify-center items-center"
+              class="w-[320px] h-[320px] bg-yellow-300 rounded-xl flex justify-center items-center md:w-[calc(20% - 20px)] md:mx-5 mt-5"
             >
               <div
-                class="w-56 h-56 bg-white rounded-xl flex justify-center items-center"
+                class="w-[250px] h-[250px] bg-white rounded-xl flex items-center justify-center"
               >
                 <div>
-                  <div class="w-28 h-28 rounded-full bg-black">
+                  <div class="w-32 h-32 bg-blue-400 rounded-full">
                     <img
                       class="w-full h-full object-cover rounded-full"
-                      src="https://vader.news/__export/1595909427453/sites/gadgets/img/2020/07/28/homer-simpso.jpeg_1686074016.jpeg"
+                      src="https://www.viaempresa.cat/uploads/s1/43/99/69/homer.jpg"
+                      alt="imagen Homero Simpson"
                     />
                   </div>
-                  <div class="text-sm mt-4">
-                    <h3>Homero Simpson</h3>
-                    <p class="text-gray-600 text-xs">Padre y Esposo</p>
+                  <div class="text-center">
+                    <h2 class="mt-4 text-sm">Homero Simpson</h2>
+                    <h4 class="text-xs text-zinc-600">Personaje Principal</h4>
                   </div>
                 </div>
               </div>
             </div>
           </div>
-          <!-- Card two -->
+          <!-- Card Marge -->
           <div class="flex justify-center">
             <div
-              class="w-11/12 h-80 bg-yellow-300 rounded-xl mt-10 flex justify-center items-center"
+              class="w-[320px] h-[320px] bg-yellow-300 rounded-xl flex justify-center items-center md:w-[calc(20% - 20px)] md:mx-5 mt-5"
             >
               <div
-                class="w-56 h-56 bg-white rounded-xl flex justify-center items-center"
+                class="w-[250px] h-[250px] bg-white rounded-xl flex items-center justify-center"
               >
                 <div>
-                  <div class="w-28 h-28 rounded-full bg-black">
+                  <div class="w-32 h-32 bg-blue-400 rounded-full">
                     <img
                       class="w-full h-full object-cover rounded-full"
-                      src="https://64.media.tumblr.com/363e35f917bb57b1e6c4247dec673a31/tumblr_inline_p0ajap4dg81s7vi9z_640.jpg"
+                      src="https://cdn.hobbyconsolas.com/sites/navi.axelspringer.es/public/media/image/2021/10/simpson-marge-simpson-2517433.jpg"
+                      alt="imagen Marge Simpson"
                     />
                   </div>
-                  <div class="text-sm mt-4">
-                    <h3>Marge Simpson</h3>
-                    <p class="text-gray-600 text-xs">Madre y Esposa</p>
+                  <div class="text-center">
+                    <h2 class="mt-4 text-sm">Marge Simpson</h2>
+                    <h4 class="text-xs text-zinc-600">Esposa</h4>
                   </div>
                 </div>
               </div>
             </div>
           </div>
-          <!-- Card Tree -->
+          <!-- Card Bart -->
           <div class="flex justify-center">
             <div
-              class="w-11/12 h-80 bg-yellow-300 rounded-xl mt-10 flex justify-center items-center"
+              class="w-[320px] h-[320px] bg-yellow-300 rounded-xl flex justify-center items-center md:w-[calc(20% - 20px)] md:mx-5 mt-5"
             >
               <div
-                class="w-56 h-56 bg-white rounded-xl flex justify-center items-center"
+                class="w-[250px] h-[250px] bg-white rounded-xl flex items-center justify-center"
               >
                 <div>
-                  <div class="w-28 h-28 rounded-full bg-black">
+                  <div class="w-32 h-32 bg-blue-400 rounded-full">
                     <img
                       class="w-full h-full object-cover rounded-full"
-                      src="https://1.bp.blogspot.com/-owd45kpJfGg/YCjoVbHrTzI/AAAAAAAAj5A/1WflcPbCVq8vEWds-cPQ1ykJHdj603XagCLcBGAsYHQ/s0/los-simpson-personajes-bart-simpson.jpg"
+                      src="https://cdn.hobbyconsolas.com/sites/navi.axelspringer.es/public/media/image/2020/01/bart-simpson-1841831.jpg?tf=3840x"
+                      alt="imagen Bart Simpson"
                     />
                   </div>
-                  <div class="text-sm mt-4">
-                    <h3>Bart Simpson</h3>
-                    <p class="text-gray-600 text-xs">Hijo y Hermano</p>
+                  <div class="text-center">
+                    <h2 class="mt-4 text-sm">Bart Simpson</h2>
+                    <h4 class="text-xs text-zinc-600">Hijo</h4>
                   </div>
                 </div>
               </div>
             </div>
           </div>
-          <!-- Card Four -->
+          <!-- Card Lisa -->
           <div class="flex justify-center">
             <div
-              class="w-11/12 h-80 bg-yellow-300 rounded-xl mt-10 flex justify-center items-center"
+              class="w-[320px] h-[320px] bg-yellow-300 rounded-xl flex justify-center items-center md:w-[calc(20% - 20px)] md:mx-5 mt-5"
             >
               <div
-                class="w-56 h-56 bg-white rounded-xl flex justify-center items-center"
+                class="w-[250px] h-[250px] bg-white rounded-xl flex items-center justify-center"
               >
                 <div>
-                  <div class="w-28 h-28 rounded-full bg-black">
+                  <div class="w-32 h-32 bg-blue-400 rounded-full">
                     <img
                       class="w-full h-full object-cover rounded-full"
-                      src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSITpN1y6af5eiyVtK0iZplPqHHpL5KuJWLcMBy1EgcyiJEKIsuaRjhkVZTDqGN5kocuwU&usqp=CAU"
+                      src="https://e00-elmundo.uecdn.es/assets/multimedia/imagenes/2022/09/19/16635806462937.png"
+                      alt="imagen Lisa Simpson"
                     />
                   </div>
-                  <div class="text-sm mt-4">
-                    <h3>Lisa Simpson</h3>
-                    <p class="text-gray-600 text-xs">Hija y Hermana</p>
+                  <div class="text-center">
+                    <h2 class="mt-4 text-sm">Lisa Simpson</h2>
+                    <h4 class="text-xs text-zinc-600">Hija</h4>
                   </div>
                 </div>
               </div>
             </div>
           </div>
-          <!-- Card Five -->
+          <!-- Card Maggie -->
           <div class="flex justify-center">
             <div
-              class="w-11/12 h-80 bg-yellow-300 rounded-xl mt-10 flex justify-center items-center"
+              class="w-[320px] h-[320px] bg-yellow-300 rounded-xl flex justify-center items-center md:w-[calc(20% - 20px)] md:mx-5 mt-5"
             >
               <div
-                class="w-56 h-56 bg-white rounded-xl flex justify-center items-center"
+                class="w-[250px] h-[250px] bg-white rounded-xl flex items-center justify-center"
               >
                 <div>
-                  <div class="w-28 h-28 rounded-full bg-black">
+                  <div class="w-32 h-32 bg-blue-400 rounded-full">
                     <img
                       class="w-full h-full object-cover rounded-full"
-                      src="https://www.show.news/__export/1587153105864/sites/debate/img/2020/04/17/simpsons-disney_x2x_crop1587152967419.jpg_943222218.jpg"
+                      src="https://i.pinimg.com/736x/f9/88/94/f98894f995ff1f0c50ef142517f20a31.jpg"
+                      alt="imagen Maggie Simpson"
                     />
                   </div>
-                  <div class="text-sm mt-4">
-                    <h3>Lisa Simpson</h3>
-                    <p class="text-gray-600 text-xs">Hija y Hermana</p>
+                  <div class="text-center">
+                    <h2 class="mt-4 text-sm">Maggie Simpson</h2>
+                    <h4 class="text-xs text-zinc-600">Hija</h4>
                   </div>
                 </div>
               </div>
@@ -192,21 +235,29 @@
           </div>
         </div>
       </section>
-      <section class="text-center mt-20">
-        <h2 class="text-4xl font-bold">
-          Descubre una nueva era de colecciones
-        </h2>
-        <p class="text-sm mt-8 mb-8">
-          Tendras la oportunidad de coleccionar NFTs sobre distintos tópicos, y
-          de este modo acceder a beneficios exclusivos por tomar parte de dicho
-          club. Ej: "The Simpsons"
-        </p>
-        <a class="text-2xl font-bold underline">Empezar Ahora</a>
+      <section class="mt-20" id="colection">
+        <div
+          class="text-center lg:text-start lg:flex lg:items-center lg:justify-around"
+        >
+          <div class="lg:w-5/12">
+            <h2 class="text-4xl font-bold">
+              Descubre una nueva era de colecciones
+            </h2>
+          </div>
+          <div class="lg:w-5/12">
+            <p class="text-sm mt-8 mb-8 lg:mb-4">
+              Tendras la oportunidad de coleccionar NFTs sobre distintos
+              tópicos, y de este modo acceder a beneficios exclusivos por tomar
+              parte de dicho club. Ej: "The Simpsons"
+            </p>
+            <a class="text-2xl font-bold underline lg:text-lg">Empezar Ahora</a>
+          </div>
+        </div>
 
-        <div class="flex-col justify-center mt-10">
+        <div class="flex flex-col justify-around mt-10 lg:flex-row">
           <!--Card img One -->
           <div class="flex justify-center">
-            <div class="w-11/12 h-72 bg-blue-400 rounded-xl">
+            <div class="w-[320px] h-[320px] bg-blue-400 rounded-xl">
               <img
                 class="h-full w-full object-cover rounded-xl"
                 src="https://s3.abcstatics.com/media/play/2022/01/23/Dali-simpson-U23640176881fxY-620x349@abc.jpg"
@@ -214,8 +265,8 @@
             </div>
           </div>
           <!--Card img Two -->
-          <div class="flex justify-center mt-10">
-            <div class="w-11/12 h-72 bg-blue-400 rounded-xl">
+          <div class="flex justify-center mt-10 lg:mt-0">
+            <div class="w-[320px] h-[320px] bg-blue-400 rounded-xl">
               <img
                 class="h-full w-full object-cover rounded-xl"
                 src="https://etcetera.com.mx/wp-content/uploads/2021/04/simp5.jpg"
@@ -223,8 +274,8 @@
             </div>
           </div>
           <!-- Card img three -->
-          <div class="flex justify-center mt-10">
-            <div class="w-11/12 h-72 bg-blue-400 rounded-xl">
+          <div class="flex justify-center mt-10 lg:mt-0">
+            <div class="w-[320px] h-[320px] bg-blue-400 rounded-xl">
               <img
                 class="h-full w-full object-cover rounded-xl"
                 src="https://mymodernmet.com/wp/wp-content/uploads/2021/05/fine-art-simpsons-15.jpeg"
@@ -233,50 +284,50 @@
           </div>
         </div>
       </section>
-      <section class="mt-20">
+      <section class="mt-20" id="nfts">
         <h2 class="font-bold text-3xl text-center">Hot NFTs</h2>
         <div class="flex justify-center mt-10">
-          <div class="flex flex-col">
+          <div class="flex flex-col lg:flex-row">
             <button
               class="py-2 px-4 font-bold bg-blue-400 text-white rounded-xl mr-2"
             >
               🎨 Todas
             </button>
             <button
-              class="py-2 px-4 font-bold bg-blue-400 text-white rounded-xl mt-2 mr-2"
+              class="py-2 px-4 font-bold bg-blue-400 text-white rounded-xl mt-2 mr-2 lg:mt-0"
             >
               🎷 Musica
             </button>
             <button
-              class="py-2 px-4 font-bold bg-blue-400 text-white rounded-xl mt-2 mr-2"
+              class="py-2 px-4 font-bold bg-blue-400 text-white rounded-xl mt-2 mr-2 lg:mt-0"
             >
               🏎️ Autos
             </button>
           </div>
-          <div class="flex flex-col">
+          <div class="flex flex-col lg:flex-row">
             <button
               class="py-2 px-4 font-bold bg-blue-400 text-white rounded-xl"
             >
               ⚽ Futbol
             </button>
             <button
-              class="py-2 px-4 font-bold bg-blue-400 text-white rounded-xl mt-2"
+              class="py-2 px-4 font-bold bg-blue-400 text-white rounded-xl mt-2 lg:mt-0 lg:ml-2"
             >
               🎬 Pelicula
             </button>
             <button
-              class="py-2 px-4 font-bold bg-blue-400 text-white rounded-xl mt-2"
+              class="py-2 px-4 font-bold bg-blue-400 text-white rounded-xl mt-2 lg:mt-0 lg:ml-2"
             >
               🏛️ Politico
             </button>
           </div>
         </div>
 
-        <div class="mt-10">
+        <div class="mt-10 lg:flex lg:flex-wrap md:justify-center lg:mt-20">
           <!-- Card Nft One -->
           <div class="flex justify-center">
             <div
-              class="w-11/12 py-6 bg-gray-200 rounded-xl flex flex-col justify-center items-center"
+              class="w-[300px] h-[430px] bg-gray-200 rounded-xl flex flex-col justify-center items-center md:w-[calc(20% - 20px)] md:mx-4 md:mb-4 lg:mx-10 lg:my-10"
             >
               <div class="w-60 h-60 rounded-xl">
                 <img
@@ -320,7 +371,7 @@
           <!-- Card Nft Two -->
           <div class="flex justify-center">
             <div
-              class="w-11/12 py-6 bg-gray-200 rounded-xl flex flex-col justify-center items-center mt-10"
+              class="w-[300px] h-[430px] bg-gray-200 rounded-xl flex flex-col justify-center items-center mt-10 md:mx-4 md:my-4 lg:mx-10 lg:my-10"
             >
               <div class="w-60 h-60 rounded-xl">
                 <img
@@ -363,7 +414,7 @@
           <!-- Card Nft Three -->
           <div class="flex justify-center">
             <div
-              class="w-11/12 py-6 bg-gray-200 rounded-xl flex flex-col justify-center items-center mt-10"
+              class="w-[300px] h-[430px] bg-gray-200 rounded-xl flex flex-col justify-center items-center mt-10 md:mx-4 md:my-4 lg:mx-10 lg:my-10"
             >
               <div class="w-60 h-60 rounded-xl">
                 <img
@@ -406,7 +457,7 @@
           <!-- Card Nft Four -->
           <div class="flex justify-center">
             <div
-              class="w-11/12 py-6 bg-gray-200 rounded-xl flex flex-col justify-center items-center mt-10"
+              class="w-[300px] h-[430px] bg-gray-200 rounded-xl flex flex-col justify-center items-center mt-10 md:mx-4 md:my-4 lg:mx-10 lg:my-10"
             >
               <div class="w-60 h-60 rounded-xl">
                 <img
@@ -449,7 +500,7 @@
           <!-- Card Nft Five -->
           <div class="flex justify-center">
             <div
-              class="w-11/12 py-6 bg-gray-200 rounded-xl flex flex-col justify-center items-center mt-10"
+              class="w-[300px] h-[430px] bg-gray-200 rounded-xl flex flex-col justify-center items-center mt-10 md:mx-4 md:my-4 lg:mx-10 lg:my-10"
             >
               <div class="w-60 h-60 rounded-xl">
                 <img
@@ -492,7 +543,7 @@
           <!-- Card Nft Six -->
           <div class="flex justify-center">
             <div
-              class="w-11/12 py-6 bg-gray-200 rounded-xl flex flex-col justify-center items-center mt-10"
+              class="w-[300px] h-[430px] bg-gray-200 rounded-xl flex flex-col justify-center items-center mt-10 md:mx-4 md:my-4 lg:mx-10 lg:my-10"
             >
               <div class="w-60 h-60 rounded-xl">
                 <img
@@ -536,19 +587,21 @@
       </section>
       <div class="flex justify-center">
         <button
-          class="py-2 px-4 bg-blue-400 rounded-xl font-bold mt-10 text-white"
+          class="py-2 px-4 bg-blue-400 rounded-xl font-bold mt-10 text-white hover:bg-yellow-300 hover:shadow-xl"
         >
           Ver Más
         </button>
       </div>
     </main>
-    <footer class="flex flex-col justify-center bg-yellow-300 h-[105px]">
+    <footer
+      class="flex flex-col justify-center bg-yellow-300 h-[675px] sm:h-[800px]"
+    >
       <div class="flex p-8">
-        <section class="mt-10 mb-10 w-11/12">
-          <div>
+        <section class="mt-10 mb-10 w-11/12 lg:w-full">
+          <div class="lg:flex lg:justify-around lg:items-center">
             <div>
               <h2 class="text-3xl font-bold">Contact Us</h2>
-              <div class="text-[10px] sm:text-lg">
+              <div class="text-[10px] sm:text-lg lg:flex lg:space-x-12">
                 <div>
                   <h3 class="mt-10 font-bold">Arg. Buenos Aires</h3>
                   <div class="flex mt-5 space-x-3">
@@ -589,7 +642,7 @@
             <div class="hidden lg:block">
               <img
                 class="w-[400px] rounded-lg"
-                src="/personaje/kimetsu-no-yaiba.jpg"
+                src="https://es.web.img2.acsta.net/pictures/14/02/11/12/56/318203.jpg"
                 alt="imagen contacto"
               />
             </div>
